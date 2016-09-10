@@ -27,17 +27,12 @@
             <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
             <div class="left">
                 <a href="#" class="link icon-only">
-                    <i class="icon icon-form-comment"></i>
+                    <i class="icon icon-back"></i>
                 </a>
             </div>
 
-            <div class="center sliding">Mariners</div>
-
-            <div class="right">
-                <a href="#" class="link icon-only">
-                    <i class="icon icon-bars"></i>
-                </a>
-            </div>
+            <div class="center">Mariners</div>
+            <div class="right"></div>
           </div>
         </div>
         <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
@@ -46,6 +41,48 @@
           <div data-page="index" class="page">
             <!-- Scrollable page content -->
             <div class="page-content">
+                <style type="text/css" media="screen">
+                    .swiper-slide {
+                      background: transparent;
+                      width: 90vw;
+                      text-align: center;
+                    }
+                    .swiper-slide img {
+                      max-width: 100%;
+                      max-height: 100%;
+                      box-sizing: border-box;
+                      border: 1px solid #ccc;
+                    }
+                    .swiper-container {
+                      height: 32vh;
+                      margin: 5vh 0;
+                    }
+                </style>
+                <div class="swiper-container swiper-init">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="http://mlb.mlb.com/mlb/images/players/head_shot/518553.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://pbs.twimg.com/profile_images/717210190337191936/W3z7LhjC_400x400.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMG_VQTQqsn3jupdGKiZMs_wFHeemc5n03PGYKSVnqwq0gxvIWFBhPj9o" alt="">
+                        </div>
+                    </div>
+                    <!-- Pagination, if required -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <h2>Steve Cishek #31</h2>
+                <p>P | B/T: R/R | 6' 6"/215 | Age: 30</p>
+                <p class="buttons-row">
+                    <a href="#" class="button">Bio</a>
+                    <a href="#" class="button active">Twitter</a>
+                    <a href="#" class="button">Instagram</a>
+                    <a href="#" class="button">News</a>
+                </p>
+
                 <div class="card">
                     <div class="card-content">
                         <div class="card-content-inner">Thanks for making it out to the 1st @Mariners Faith Day! It was a great time sharing our faith with you all!</div>
@@ -55,43 +92,24 @@
                         <span class="twitter-handle">@srShrek31</span>
                         <span class="human-time">Sep 1</span>
                     </div>
-                </div><div class="card">
+                </div>
+                <div class="card">
                     <div class="card-content">
-                        <div class="card-content-inner">Jump into everyone's mentions from mere feet away. Social Media Night is 9/16. <a href="http://atmlb.com/2bYwKXq">http://atmlb.com/2bYwKXq</a></div>
-                        <img style="max-width: 100%;" src="https://pbs.twimg.com/media/CrSpmvZUIAQoC4J.jpg" alt=""/>
+                        <div class="card-content-inner">Don't forget tomorrow! Mariners first faith day! 30 mins after the game behind centerfield concourse.</div>
+                        <img style="max-width: 100%;" src="https://pbs.twimg.com/media/CqXMCLWUIAAjZTa.jpg" alt=""/>
                     </div>
                     <div class="card-footer">
-                        <span class="twitter-handle">@Mariners</span>
+                        <span class="twitter-handle">@srShrek31</span>
                         <span class="human-time">Sep 1</span>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content">
-                        <div class="card-content-inner">It's a quick 1-2-3 5th inning for Felix. The King has thrown five shutout innings and it's still 6-0 #Mariners.</div>
-                        <img style="max-width: 100%;" src="https://pbs.twimg.com/media/CsBfA_gUIAA0S3n.jpg" alt=""/>
+                        <div class="card-content-inner">BOOOM! Let's go! Diaz way to stay strong and Seags sickkkkkkk play. Wow what a game #goM's</div>
                     </div>
                     <div class="card-footer">
-                        <span class="twitter-handle">@Mariners</span>
-                        <span class="human-time">28 minutes</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="card-content-inner">#Mariners hanging up some crooked numbers. They send nine to the plate in the 3rd & Felix heads out with a 6-0 lead.</div>
-                        <img style="max-width: 100%;" src="https://pbs.twimg.com/media/CsBXcZhUkAA2W3P.jpg" alt=""/>
-                    </div>
-                    <div class="card-footer">
-                        <span class="twitter-handle">@Mariners</span>
-                        <span class="human-time">1 hour</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="card-content-inner">Gamel flies down the line to beat out the double play and earn the RBI. Put another on the board, it's 6-0 #Mariners.</div>
-                    </div>
-                    <div class="card-footer">
-                        <span class="twitter-handle">@Mariners</span>
-                        <span class="human-time">1 hour</span>
+                        <span class="twitter-handle">@srShrek31</span>
+                        <span class="human-time">Sep 1</span>
                     </div>
                 </div>
             </div>
@@ -102,5 +120,9 @@
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="../bower_components/Framework7/dist/js/framework7.js"></script>
     <!-- Path to your app js-->
+    <script type="text/javascript" charset="utf-8">
+        var app = new Framework7();
+        var playerSwiper = app.swiper(".swiper-container", {speed: 400, pagination: ".swiper-container .swiper-pagination"});
+    </script>
   </body>
 </html> 
