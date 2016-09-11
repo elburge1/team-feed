@@ -4,11 +4,9 @@ var tmplTeamFeed = Template7.compile(Dom7('#template-team-feed').html());
 
 
 // load data
-Dom7.get('../data/players.json', '', function (data) {
-    console.log(data);
+Dom7.get('../data/player1-4.json', '', function (data) {
     var data = JSON.parse(data);
     window.players = {players: _.values(data)};
-    console.log(players);
 
     // team feed
     window.teamFeed = [];
