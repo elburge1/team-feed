@@ -1,18 +1,32 @@
 // compile templates
 var tmplRoster = Template7.compile(Dom7('#template-roster').html());
 var tmplTeamFeed = Template7.compile(Dom7('#template-team-feed').html());
+var tmplPlayerFeed = Template7.compile(Dom7('#template-player-feed').html());
+var tmplPlayer = Template7.compile(Dom7('#template-player').html());
+var tmplPlayerBio = Template7.compile(Dom7('#template-player-bio').html());
 
+function renderPlayer(player_id) {
+    console.log("rerender " + player_id);
+    var player = window.players[player_id];
+
+    Dom7("#player-container").html(tmplPlayer(player));
+    Dom7("#player-bio-container").html(tmplPlayerBio(player));
+    Dom7("#player-twitter-container").html(tmplPlayerFeed({posts: window.playerFeeds[player._id]}));
+
+}
 
 // load data
 Dom7.get('../data/player1-4.json', '', function (data) {
     var data = JSON.parse(data);
-    window.players = {players: _.values(data)};
+    window.playerData = {players: _.values(data)};
 
     // team feed
     window.teamFeed = [];
     window.playerFeeds = {};
-    _.forEach(window.players.players, function(player) {
+    window.players = {};
+    _.forEach(window.playerData.players, function(player) {
         window.playerFeeds[player._id] = [];
+        window.players[player._id] = player;
         var twitter = player.socialMedia[0];
         _.forEach(twitter.posts, function(post) {
             post.handle = twitter.handle;
@@ -25,29 +39,54 @@ Dom7.get('../data/player1-4.json', '', function (data) {
 
 
     // render tenmplates
-    Dom7("#roster-container").html(tmplRoster(window.players));
+    Dom7("#roster-container").html(tmplRoster(window.playerData));
     Dom7("#team-feed-container").html(tmplTeamFeed({posts: window.teamFeed}));
 
 
     // init
-    var app = new Framework7({pushState: true});
-    var mainView = app.addView('.view-main', {domCache: true});
+    window.app = new Framework7({pushState: true});
+    window.mainView = window.app.addView('.view-main', {domCache: true});
+    
 
     Dom7(".back-link").on("click", function(evt) {
         evt.preventDefault();
-        mainView.router.back({pushState: true});
+        window.mainView.router.back({pushState: true});
     });
 
     // team view
     Dom7(".player-card").on("click", function(evt) {
-        var player = Dom7(evt.currentTarget).data("player");
+        var player_id = Dom7(evt.currentTarget).data("player");
+        renderPlayer(player_id);
         // load player data
-        mainView.router.load({pageName: "player", pushState: true});
+        window.mainView.router.load({pageName: "player", pushState: true});
     });
 
+    //roster view
+    Dom7(".roster-link").on("click", function(evt) {
+        console.log("roster link");
+        evt.preventDefault();
+        var player_id = Dom7(evt.currentTarget).data("player");
+        renderPlayer(player_id);
+        window.mainView.router.load({pageName: "player", pushState: true});
+    });
+
+
     // player view
-    //var playerSwiper = app.swiper(".swiper-container", {speed: 400, pagination: ".swiper-container .swiper-pagination"});
+    //var playerSwiper = window.app.swiper(".swiper-container", {speed: 400, pagination: ".swiper-container .swiper-pagination"});
 
+    Dom7(".feed-button").on("click", function(evt) {
+        console.log("feed button");
+        evt.preventDefault();
 
+        Dom7(".feed-button").removeClass("active");
+        Dom7(evt.target).addClass("active");
+
+        Dom7("#player-bio-container").hide();
+        Dom7("#player-twitter-container").hide();
+        Dom7("#player-instagram-container").hide();
+        var targetId = "#player-" + evt.target.id + "-container";
+        console.log(targetId);
+        Dom7(targetId).show();
+    });
 });
 
