@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="../bower_components/Framework7/dist/css/framework7.ios.css">
     <!-- Path to Framework7 color related styles, iOS Theme -->
     <link rel="stylesheet" href="../bower_components/Framework7/dist/css/framework7.ios.colors.min.css">
-    <!-- Path to your custom app styles-->
+     <!-- Path to your custom app styles-->
+     <link href="https://cdn.quilljs.com/1.0.3/quill.snow.css" rel="stylesheet">
   </head>
   <body>
     <!-- Status bar overlay for full screen mode (PhoneGap) -->
@@ -30,7 +31,7 @@
               <div class="navbar-inner">
                 <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
                 <div class="left sliding">
-                    <a href="#" class="link icon-only">
+                    <a href="#" data-popup=".popup-comment" class="open-popup">
                         <i class="icon icon-form-comment"></i>
                     </a>
                 </div>
@@ -252,9 +253,29 @@
         </div>
       </div>
     </div>
+    <div class="popup popup-comment">
+        <div class="content-block-title">Comment</div>
+        <div class="content-block inset">
+            <div id="editor" style="min-height: 70vh;" contenteditable="true">
+                <p>Send your comments to the team here...</p>
+            </div>
+            <p><a href="#" class="button close-popup">Post</a></p>
+        </div>
+    </div>
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="../bower_components/Framework7/dist/js/framework7.js"></script>
     <!-- Path to your app js-->
     <script src="/mockups/app.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.quilljs.com/1.0.3/quill.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        var toolbarOptions = [['bold', 'italic'], ['link', 'image']];
+
+        var quill = new Quill("#editor", {
+            theme: "snow",
+            modules: {
+                toolbar: toolbarOptions
+            }
+        });
+    </script>
   </body>
 </html> 
