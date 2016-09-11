@@ -267,6 +267,7 @@
     <!-- Path to your app js-->
     <script src="/mockups/app.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://cdn.quilljs.com/1.0.3/quill.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8">
         var toolbarOptions = [['bold', 'italic'], ['link', 'image']];
 
@@ -275,6 +276,13 @@
             modules: {
                 toolbar: toolbarOptions
             }
+        });
+    </script>
+    <script type="text/javascript" charset="utf-8">
+        var xhr = Dom7.get('../data/players.json', '', function (data) {
+            console.log(data);
+            var players = JSON.parse(data);
+            console.log(players);
         });
     </script>
   </body>
