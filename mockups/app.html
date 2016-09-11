@@ -46,7 +46,7 @@
               </div>
             </div>
             <!-- Scrollable page content -->
-            <div class="page-content">
+            <div id="team-feed-container" class="page-content">
                 <div class="card player-card" data-player="srShrek31">
                     <div class="card-content">
                         <div class="card-content-inner">Thanks for making it out to the 1st @Mariners Faith Day! It was a great time sharing our faith with you all!</div>
@@ -255,18 +255,20 @@
         </a>       
         {{/each}}
     </script>
-    <script type="text/template" id="template-post" charset="utf-8">
-        <div class="card">
+    <script type="text/template" id="template-team-feed" charset="utf-8">
+        {{#each posts}}
+        <div class="card player-card" data-player="{{this.playerId}}">
             <div class="card-content">
-                <div class="card-content-inner">{{content}}</div>
-                {{#if image}}
+                <div class="card-content-inner">{{this.posts}}</div>
+                {{#if this.image}}
                 <img style="max-width: 100%;" src="{{image}}" alt=""/>
                 {{/if}}
             </div>
             <div class="card-footer">
-                <span class="twitter-handle">{{handle}}</span>
+                <span class="twitter-handle">{{this.handle}}</span>
             </div>
-        </div>       
+        </div>
+        {{/each}}
     </script>
     <script src="/mockups/app.js" type="text/javascript" charset="utf-8"></script>
   </body>

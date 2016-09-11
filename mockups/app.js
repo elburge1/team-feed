@@ -1,15 +1,34 @@
 // compile templates
 var tmplRoster = Template7.compile(Dom7('#template-roster').html());
+var tmplTeamFeed = Template7.compile(Dom7('#template-team-feed').html());
 
 
 // load data
 Dom7.get('../data/players.json', '', function (data) {
     console.log(data);
-    window.players = JSON.parse(data);
+    var data = JSON.parse(data);
+    window.players = {players: _.values(data)};
     console.log(players);
 
+    // team feed
+    window.teamFeed = [];
+    window.playerFeeds = {};
+    _.forEach(window.players.players, function(player) {
+        window.playerFeeds[player._id] = [];
+        var twitter = player.socialMedia[0];
+        _.forEach(twitter.posts, function(post) {
+            post.handle = twitter.handle;
+            post.playerId = player._id;
+            window.playerFeeds[player._id].push(post);
+            window.teamFeed.push(post);
+        });
+    });
+
+
+
     // render tenmplates
-    Dom7("#roster-content").html(tmplRoster(window.players));
+    Dom7("#roster-container").html(tmplRoster(window.players));
+    Dom7("#team-feed-container").html(tmplTeamFeed({posts: window.teamFeed}));
 
 
     // init
