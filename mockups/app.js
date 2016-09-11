@@ -2,6 +2,7 @@
 var tmplRoster = Template7.compile(Dom7('#template-roster').html());
 var tmplTeamFeed = Template7.compile(Dom7('#template-team-feed').html());
 var tmplPlayerFeed = Template7.compile(Dom7('#template-player-feed').html());
+var tmplPlayerInstagram = Template7.compile(Dom7('#template-player-instagram').html());
 var tmplPlayer = Template7.compile(Dom7('#template-player').html());
 var tmplPlayerBio = Template7.compile(Dom7('#template-player-bio').html());
 
@@ -12,6 +13,7 @@ function renderPlayer(player_id) {
     Dom7("#player-container").html(tmplPlayer(player));
     Dom7("#player-bio-container").html(tmplPlayerBio(player));
     Dom7("#player-twitter-container").html(tmplPlayerFeed({posts: window.playerFeeds[player._id]}));
+    Dom7("#player-instagram-container").html(tmplPlayerInstagram({posts: window.playerInstagram[player._id]}));
 
 }
 
@@ -23,16 +25,22 @@ Dom7.get('../data/player1-4.json', '', function (data) {
     // team feed
     window.teamFeed = [];
     window.playerFeeds = {};
+    window.playerInstagram = {};
     window.players = {};
     _.forEach(window.playerData.players, function(player) {
         window.playerFeeds[player._id] = [];
+        window.playerInstagram[player._id] = [];
         window.players[player._id] = player;
         var twitter = player.socialMedia[0];
+        var instagram = player.socialMedia[1];
         _.forEach(twitter.posts, function(post) {
             post.handle = twitter.handle;
             post.playerId = player._id;
             window.playerFeeds[player._id].push(post);
             window.teamFeed.push(post);
+        });
+        _.forEach(instagram.posts, function(post) {
+            window.playerInstagram[player._id].push(post);
         });
     });
 

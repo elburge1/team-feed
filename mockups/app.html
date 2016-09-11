@@ -218,6 +218,17 @@
         </div>
         {{/each}}
     </script>
+    <script type="text/template" id="template-player-instagram" charset="utf-8">
+        {{#each posts}}
+        {{#if this.image}}
+        <div class="card">
+            <div class="card-content">
+                <img style="max-width: 100%;" src="{{this.image}}" alt=""/>
+            </div>
+        </div>
+        {{#if}}
+        {{/each}}
+    </script>
     <script src="/mockups/app.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html> 
