@@ -1,0 +1,172 @@
+{
+  "player1": {
+    "_id": "57d5b00fa8dcfa0df1f44bcf",
+    "name": "Robinson Cano",
+    "jersynumber": 22,
+    "postion": "Left Field",
+    "height": "6'0",
+    "weight": 210,
+    "dob": "1982-10-22",
+    "age": 33,
+    "born": "San Pedro de Macoris, Dominican Republic",
+    "Image": "http://mlb.mlb.com/mlb/images/players/head_shot/429664.jpg",
+    "playerDesc": "Robinson Jose Canoâ€¦resides in San Pedro de Macoris, Dominican Republicâ€¦played basketball and baseball at San Pedro Apostol High Schoolâ€¦father, Jose, was a pitcher in the Yankees, Braves and Astros organizations; appeared in 6 games with the Astros (3 starts) in 1989â€¦ along with his mother, Claribel, and father, established the RC24 Foundation in 2011 to provide hope to sick and underprivileged children in New York City and the Dominican Republicâ€¦visited the residence of the U.S. Ambassador to the Dominican Republic on 1/27/11 as part of MLB's 'Dominican Baseball Families' initiative to support projects undertaken by the MLB Dominican Development Allianceâ€¦among 30 finalists for the 2006 Roberto Clemente Award, given annually to the Major League Baseball player who combines outstanding skills on the baseball field with devoted work in the communityâ€¦ received the 2010 'Joe DiMaggio Toast of the Town' Award from the New York Chapter of the BBWAAâ€¦was also given the 2010 'Player Citizen of the Year' Award from latinobaseball.com.",
+    "mlbdebut": "2005-05-03T00:00:00.000+0000",
+    "education": "San Pedro Apostol, San Pedro de Macoris, DR",
+    "batting": "Left",
+    "throwing": "Right",
+    "socialMedia": [
+      {
+        "socialMedia": "Twitter",
+        "handle": "@RobinsonCano",
+        "image": "https://pbs.twimg.com/profile_images/656217493359321088/nrixGawG_200x200.jpg",
+        "posts": [
+          {
+            "image": "https://pbs.twimg.com/media/Cr7xvmNUAAA6SUT.jpg",
+            "posts": "Friday's as good a day as any to vote @RobinsonCano for the Roberto Clemente award. Just use #VoteCano."
+          },
+          {
+            "image": "https://pbs.twimg.com/media/Cr7jjT8WAAAzeg5.jpg",
+            "posts": "Help our guy @RobinsonCano win a well-deserved 2016 Roberto Clemente Award by tweeting '#VoteCano'"
+          },
+          {
+            "image": "",
+            "posts": "Join me and my partner @SparklingIce to help spread kindness and support the  @RC22Foundation http://bit.ly/2bHQ3pj  #FlavorItForward"
+          },
+          {
+            "image": "https://pbs.twimg.com/media/Cr5FEgqVYAA_69q.jpg",
+            "posts": "Just about the greatest night ever @RobinsonCan "
+          }
+        ]
+      },
+      {
+        "socialMedia": "Instgram",
+        "handle": "robinsoncano",
+        "image": "https://scontent.cdninstagram.com/t51.2885-19/924749_1588613631424944_214899350_a.jpg",
+        "posts": [
+          {
+            "image": "https://www.instagram.com/p/BKJNv2XDeFN/?taken-by=robinsoncano",
+            "posts": ""
+          },
+          {
+            "image": "https://www.instagram.com/p/BKBaDG3DX4Z/?taken-by=robinsoncano",
+            "posts": ""
+          },
+          {
+            "image": "https://www.instagram.com/p/BJgDMRkD7Ux/?taken-by=robinsoncano",
+            "posts": ""
+          },
+          {
+            "image": "https://www.instagram.com/p/BJHpkEVDLW1/?taken-by=robinsoncano",
+            "posts": ""
+          },
+          {
+            "image": "https://www.instagram.com/p/BJBmG67DH2i/?taken-by=robinsoncano",
+            "posts": ""
+          },
+          {
+            "image": "https://www.instagram.com/p/BIyVUyFjnTT/?taken-by=robinsoncano",
+            "posts": ""
+          },
+          {
+            "image": "https://www.instagram.com/p/BIiTcVVjnNi/?taken-by=robinsoncano",
+            "posts": ""
+          },
+          {
+            "image": "https://www.instagram.com/p/BIVDAtMDFbd/?taken-by=robinsoncano",
+            "posts": ""
+          },
+          {
+            "image": "https://www.instagram.com/p/BHtdBFPDxUq/?taken-by=robinsoncano",
+            "posts": ""
+          }
+        ]
+      }
+    ]
+  },
+  "player2": {
+    "_id": "57d5b00fa8dcfa0df1f44bd2",
+    "name": "Nelson Cruz",
+    "jersynumber": 23,
+    "postion": "DH",
+    "height": "6'2",
+    "weight": 230,
+    "dob": "1980-07-01",
+    "age": 36,
+    "born": "Las Matas de Santa Cruz, Dominican Republic",
+    "Image": "http://mlb.mlb.com/mlb/images/players/head_shot/443558.jpg",
+    "playerDesc": "Nelson Ramon Martinez Cruz, Jr...originally signed by the New York Mets organization as a non-drafted free agent on Feb. 23, 1998...played basketball for the Dominican Republic Junior National Team...father, Nelson Cruz, Sr., played professional baseball in the Dominican Republic...was the recipient of the 2010 Harold McKinney Good Guy Award by the Dallas-Fort Worth BBWAA chapter...Nelson and his wife, the former Solani Genao, were married on Dec. 25, 2009 and have a daughter, Giada (10/11/12)....also has a son, Nelson, Jr. (11/1/08).",
+    "mlbdebut": "2005-09-17",
+    "education": "",
+    "batting": "Right",
+    "throwing": "Right",
+    "socialMedia": [
+      {
+        "socialMedia": "Twitter",
+        "handle": "@ncboomstick23",
+        "image": "https://pbs.twimg.com/profile_images/589994512283402240/RVky664b_200x200.jpg",
+        "posts": [
+          {
+            "image": "",
+            "posts": "What an AB for @ncboomstick23. He falls behind 0-2, then hits the 13th pitch of the battle for an RBI double."
+          },
+          {
+            "image": "https://pbs.twimg.com/media/CsF_fa9UkAEurHR.jpg",
+            "posts": "Nikki Jones @fuzzybunny_feet  23m23 minutes ago THANKS @ncboomstick23"
+          },
+          {
+            "image": "",
+            "posts": "#TheSwelmet looks pretty good on @ncboomstick23, doesn't it?"
+          },
+          {
+            "image": "",
+            "posts": "nice season you got going @ncboomstick23 "
+          }
+        ]
+      },
+      {
+        "socialMedia": "Instgram",
+        "handle": "ncboomstick23",
+        "image": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12935075_210917395964201_1079732517_a.jpg",
+        "posts": [
+          {
+            "image": "https://www.instagram.com/p/BJoApmPj3CG/?taken-by=ncboomstick23",
+            "posts": ""
+          },
+          {
+            "image": "https://www.instagram.com/p/BJgDb_KDV5e/?taken-by=ncboomstick23",
+            "posts": ""
+          },
+          {
+            "image": "https://www.instagram.com/p/BI9QOfFjr4o/?taken-by=ncboomstick23",
+            "posts": ""
+          },
+          {
+            "image": "https://www.instagram.com/p/BI9QOfFjr4o/?taken-by=ncboomstick23",
+            "posts": ""
+          },
+          {
+            "image": "https://www.instagram.com/p/BIyFVqiDs2b/?taken-by=ncboomstick23",
+            "posts": ""
+          },
+          {
+            "image": "https://www.instagram.com/p/BIvx6QmjWC5/?taken-by=ncboomstick23",
+            "posts": ""
+          },
+          {
+            "image": "https://www.instagram.com/p/BIiX8XpDNGw/?taken-by=ncboomstick23",
+            "posts": ""
+          },
+          {
+            "image": "https://www.instagram.com/p/BIeNyKDDcEb/?taken-by=ncboomstick23",
+            "posts": ""
+          },
+          {
+            "image": "https://www.instagram.com/p/BId6KgIDUBa/?taken-by=ncboomstick23",
+            "posts": ""
+          }
+        ]
+      }
+    ]
+  }
+}
