@@ -21,24 +21,24 @@
     <div class="views">
       <!-- Your main view, should have "view-main" class -->
       <div class="view view-main">
-        <!-- Top Navbar-->
-        <div class="navbar">
-          <div class="navbar-inner">
-            <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-            <div class="left">
-                <a href="#" class="link icon-only">
-                    <i class="icon icon-back"></i>
-                </a>
-            </div>
-
-            <div class="center">Mariners</div>
-            <div class="right"></div>
-          </div>
-        </div>
         <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
         <div class="pages navbar-through toolbar-through">
           <!-- Page, "data-page" contains page name -->
           <div data-page="index" class="page">
+            <!-- Top Navbar-->
+            <div class="navbar">
+              <div class="navbar-inner">
+                <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                <div class="left sliding">
+                    <a href="#" class="link icon-only">
+                        <i class="icon icon-back"></i>
+                    </a>
+                </div>
+
+                <div class="centet sliding">Mariners</div>
+                <div class="right sliding"></div>
+              </div>
+            </div>
             <!-- Scrollable page content -->
             <div class="page-content">
                 <style type="text/css" media="screen">
@@ -92,9 +92,6 @@
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="../bower_components/Framework7/dist/js/framework7.js"></script>
     <!-- Path to your app js-->
-    <script type="text/javascript" charset="utf-8">
-        var app = new Framework7();
-        var mainView = app.addView('.view-main', {});
-    </script>
+    <script src="app.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html> 
