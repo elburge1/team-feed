@@ -46,7 +46,7 @@
               </div>
             </div>
             <!-- Scrollable page content -->
-            <div class="page-content">
+            <div id="team-feed-container" class="page-content">
                 <div class="card player-card" data-player="srShrek31">
                     <div class="card-content">
                         <div class="card-content-inner">Thanks for making it out to the 1st @Mariners Faith Day! It was a great time sharing our faith with you all!</div>
@@ -210,44 +210,7 @@
                         max-height: 10vh;
                     }
                 </style>
-                <div class="list-block">
-                    <a href="#" class="item-content item-link">
-                        <div class="item-media">
-                            <img src="http://gdx.mlb.com/images/gameday/mugshots/mlb/656186@2x.jpg" alt="">
-                        </div>
-                        <div class="item-inner">
-                            <div class="item-title">Dan Altavilla</div>
-                            <div class="item-after">53</div>
-                        </div>
-                    </a>
-                    <a href="#" class="item-content item-link">
-                        <div class="item-media">
-                            <img src="http://gdx.mlb.com/images/gameday/mugshots/mlb/491708@2x.jpg" alt="">
-                        </div>
-                        <div class="item-inner">
-                            <div class="item-title">Arquimedes Caminero</div>
-                            <div class="item-after">48</div>
-                        </div>
-                    </a>
-                    <a href="#player" class="item-content item-link">
-                        <div class="item-media">
-                            <img src="http://gdx.mlb.com/images/gameday/mugshots/mlb/518553@2x.jpg" alt="">
-                        </div>
-                        <div class="item-inner">
-                            <div class="item-title">Steve Cishek</div>
-                            <div class="item-after">31</div>
-                        </div>
-                    </a>
-                    <a href="#" class="item-content item-link">
-                        <div class="item-media">
-                            <img src="http://gdx.mlb.com/images/gameday/mugshots/mlb/621242@2x.jpg" alt="">
-                        </div>
-                        <div class="item-inner">
-                            <div class="item-title">Edwin Diaz</div>
-                            <div class="item-after">39</div>
-                        </div>
-                    </a>
-                </div>
+                <div id="roster-container" class="list-block"></div>
             </div>
           </div>
         </div>
@@ -265,8 +228,8 @@
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="../bower_components/Framework7/dist/js/framework7.js"></script>
     <!-- Path to your app js-->
-    <script src="/mockups/app.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://cdn.quilljs.com/1.0.3/quill.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8">
         var toolbarOptions = [['bold', 'italic'], ['link', 'image']];
 
@@ -277,5 +240,36 @@
             }
         });
     </script>
+    <script type="text/javascript" charset="utf-8">
+   </script>
+    <script type="text/template" id="template-roster" charset="utf-8">
+        {{#each players}}
+        <a href="#player" class="item-content item-link">
+            <div class="item-media">
+                <img src="{{this.Image}}" alt="">
+            </div>
+            <div class="item-inner">
+                <div class="item-title">{{this.name}}</div>
+                <div class="item-after">{{this.postion}} #{{this.jersynumber}}</div>
+            </div>
+        </a>       
+        {{/each}}
+    </script>
+    <script type="text/template" id="template-team-feed" charset="utf-8">
+        {{#each posts}}
+        <div class="card player-card" data-player="{{this.playerId}}">
+            <div class="card-content">
+                <div class="card-content-inner">{{this.posts}}</div>
+                {{#if this.image}}
+                <img style="max-width: 100%;" src="{{image}}" alt=""/>
+                {{/if}}
+            </div>
+            <div class="card-footer">
+                <span class="twitter-handle">{{this.handle}}</span>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+    <script src="/mockups/app.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html> 
