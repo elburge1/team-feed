@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS, iOS Theme -->
+    <link rel="stylesheet" href="../bower_components/Framework7/dist/css/framework7.ios.css">
+    <!-- Path to Framework7 color related styles, iOS Theme -->
+    <link rel="stylesheet" href="../bower_components/Framework7/dist/css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles-->
+  </head>
+  <body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+    <!-- Views -->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, "data-page" contains page name -->
+          <div data-page="team" class="page">
+            <!-- Top Navbar-->
+            <div class="navbar">
+              <div class="navbar-inner">
+                <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                <div class="left sliding">
+                    <a href="#" class="link icon-only">
+                        <i class="icon icon-form-comment"></i>
+                    </a>
+                </div>
+
+                <div class="center sliding">Mariners</div>
+
+                <div class="right sliding">
+                    <a href="#roster" class="link icon-only">
+                        <i class="icon icon-bars"></i>
+                    </a>
+                </div>
+              </div>
+            </div>
+            <!-- Scrollable page content -->
+            <div class="page-content">
+                <div class="card player-card" data-player="srShrek31">
+                    <div class="card-content">
+                        <div class="card-content-inner">Thanks for making it out to the 1st @Mariners Faith Day! It was a great time sharing our faith with you all!</div>
+                        <img style="max-width: 100%;" src="https://pbs.twimg.com/media/CqfM6sJUAAAISzp.jpg" alt=""/>
+                    </div>
+                    <div class="card-footer">
+                        <span class="twitter-handle">@srShrek31</span>
+                        <span class="human-time">Sep 1</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-content-inner">Jump into everyone's mentions from mere feet away. Social Media Night is 9/16. <a href="http://atmlb.com/2bYwKXq">http://atmlb.com/2bYwKXq</a></div>
+                        <img style="max-width: 100%;" src="https://pbs.twimg.com/media/CrSpmvZUIAQoC4J.jpg" alt=""/>
+                    </div>
+                    <div class="card-footer">
+                        <span class="twitter-handle">@Mariners</span>
+                        <span class="human-time">Sep 1</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-content-inner">It's a quick 1-2-3 5th inning for Felix. The King has thrown five shutout innings and it's still 6-0 #Mariners.</div>
+                        <img style="max-width: 100%;" src="https://pbs.twimg.com/media/CsBfA_gUIAA0S3n.jpg" alt=""/>
+                    </div>
+                    <div class="card-footer">
+                        <span class="twitter-handle">@Mariners</span>
+                        <span class="human-time">28 minutes</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-content-inner">#Mariners hanging up some crooked numbers. They send nine to the plate in the 3rd & Felix heads out with a 6-0 lead.</div>
+                        <img style="max-width: 100%;" src="https://pbs.twimg.com/media/CsBXcZhUkAA2W3P.jpg" alt=""/>
+                    </div>
+                    <div class="card-footer">
+                        <span class="twitter-handle">@Mariners</span>
+                        <span class="human-time">1 hour</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-content-inner">Gamel flies down the line to beat out the double play and earn the RBI. Put another on the board, it's 6-0 #Mariners.</div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="twitter-handle">@Mariners</span>
+                        <span class="human-time">1 hour</span>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div data-page="player" class="page cached">
+            <!-- Top Navbar-->
+            <div class="navbar">
+              <div class="navbar-inner">
+                <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                <div class="left sliding">
+                    <a href="#" class="link icon-only back-link">
+                        <i class="icon icon-back"></i>
+                    </a>
+                </div>
+
+                <div class="center sliding">Mariners</div>
+                <div class="right sliding"></div>
+              </div>
+            </div>
+            <!-- Scrollable page content -->
+            <div class="page-content">
+                <style type="text/css" media="screen">
+                    .swiper-slide {
+                      background: transparent;
+                      width: 90vw;
+                      text-align: center;
+                    }
+                    .swiper-slide img {
+                      max-width: 100%;
+                      max-height: 100%;
+                      box-sizing: border-box;
+                      border: 1px solid #ccc;
+                    }
+                    .swiper-container {
+                      height: 32vh;
+                      margin: 5vh 0;
+                    }
+                </style>
+                <div class="swiper-container swiper-init">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="http://mlb.mlb.com/mlb/images/players/head_shot/518553.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://pbs.twimg.com/profile_images/717210190337191936/W3z7LhjC_400x400.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMG_VQTQqsn3jupdGKiZMs_wFHeemc5n03PGYKSVnqwq0gxvIWFBhPj9o" alt="">
+                        </div>
+                    </div>
+                    <!-- Pagination, if required -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <h2>Steve Cishek #31</h2>
+                <p>P | B/T: R/R | 6' 6"/215 | Age: 30</p>
+                <p class="buttons-row">
+                    <a href="#" class="button">Bio</a>
+                    <a href="#" class="button active">Twitter</a>
+                    <a href="#" class="button">Instagram</a>
+                    <a href="#" class="button">News</a>
+                </p>
+
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-content-inner">Thanks for making it out to the 1st @Mariners Faith Day! It was a great time sharing our faith with you all!</div>
+                        <img style="max-width: 100%;" src="https://pbs.twimg.com/media/CqfM6sJUAAAISzp.jpg" alt=""/>
+                    </div>
+                    <div class="card-footer">
+                        <span class="twitter-handle">@srShrek31</span>
+                        <span class="human-time">Sep 1</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-content-inner">Don't forget tomorrow! Mariners first faith day! 30 mins after the game behind centerfield concourse.</div>
+                        <img style="max-width: 100%;" src="https://pbs.twimg.com/media/CqXMCLWUIAAjZTa.jpg" alt=""/>
+                    </div>
+                    <div class="card-footer">
+                        <span class="twitter-handle">@srShrek31</span>
+                        <span class="human-time">Sep 1</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-content-inner">BOOOM! Let's go! Diaz way to stay strong and Seags sickkkkkkk play. Wow what a game #goM's</div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="twitter-handle">@srShrek31</span>
+                        <span class="human-time">Sep 1</span>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div data-page="roster" class="page cached">
+            <!-- Top Navbar-->
+            <div class="navbar">
+              <div class="navbar-inner">
+                <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                <div class="left sliding">
+                    <a href="#" class="link icon-only back-link">
+                        <i class="icon icon-back"></i>
+                    </a>
+                </div>
+
+                <div class="center sliding">Mariners</div>
+                <div class="right sliding"></div>
+              </div>
+            </div>
+            <!-- Scrollable page content -->
+            <div class="page-content">
+                <style type="text/css" media="screen">
+                    .item-media img {
+                        max-height: 10vh;
+                    }
+                </style>
+                <div class="list-block">
+                    <a href="#" class="item-content item-link">
+                        <div class="item-media">
+                            <img src="http://gdx.mlb.com/images/gameday/mugshots/mlb/656186@2x.jpg" alt="">
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Dan Altavilla</div>
+                            <div class="item-after">53</div>
+                        </div>
+                    </a>
+                    <a href="#" class="item-content item-link">
+                        <div class="item-media">
+                            <img src="http://gdx.mlb.com/images/gameday/mugshots/mlb/491708@2x.jpg" alt="">
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Arquimedes Caminero</div>
+                            <div class="item-after">48</div>
+                        </div>
+                    </a>
+                    <a href="#player" class="item-content item-link">
+                        <div class="item-media">
+                            <img src="http://gdx.mlb.com/images/gameday/mugshots/mlb/518553@2x.jpg" alt="">
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Steve Cishek</div>
+                            <div class="item-after">31</div>
+                        </div>
+                    </a>
+                    <a href="#" class="item-content item-link">
+                        <div class="item-media">
+                            <img src="http://gdx.mlb.com/images/gameday/mugshots/mlb/621242@2x.jpg" alt="">
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Edwin Diaz</div>
+                            <div class="item-after">39</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="../bower_components/Framework7/dist/js/framework7.js"></script>
+    <!-- Path to your app js-->
+    <script src="/mockups/app.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html> 
