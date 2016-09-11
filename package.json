@@ -1,0 +1,27 @@
+{
+  "name": "playerdb",
+  "version": "1.0.0",
+  "description": "A sports player social media ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abeyer/playerdb.git"
+  },
+  "author": "Tony Lanera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abeyer/playerdb/issues"
+  },
+  "homepage": "https://github.com/abeyer/playerdb#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "framework7": "^1.4.2",
+    "mongoose": "^4.6.0",
+    "request": "^2.74.0"
+  }
+}
