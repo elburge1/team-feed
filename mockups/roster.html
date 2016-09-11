@@ -47,44 +47,42 @@
                     }
                 </style>
                 <div class="list-block">
-                    <ul>
-                        <li class="item-content">
-                            <div class="item-media">
-                                <img src="http://gdx.mlb.com/images/gameday/mugshots/mlb/656186@2x.jpg" alt="">
-                            </div>
-                            <div class="item-inner">
-                                <div class="item-title">Dan Altavilla</div>
-                                <div class="item-after">53</div>
-                            </div>
-                        </li>
-                        <li class="item-content">
-                            <div class="item-media">
-                                <img src="http://gdx.mlb.com/images/gameday/mugshots/mlb/491708@2x.jpg" alt="">
-                            </div>
-                            <div class="item-inner">
-                                <div class="item-title">Arquimedes Caminero</div>
-                                <div class="item-after">48</div>
-                            </div>
-                        </li>
-                        <li class="item-content">
-                            <div class="item-media">
-                                <img src="http://gdx.mlb.com/images/gameday/mugshots/mlb/518553@2x.jpg" alt="">
-                            </div>
-                            <div class="item-inner">
-                                <div class="item-title">Steve Cishek</div>
-                                <div class="item-after">31</div>
-                            </div>
-                        </li>
-                        <li class="item-content">
-                            <div class="item-media">
-                                <img src="http://gdx.mlb.com/images/gameday/mugshots/mlb/621242@2x.jpg" alt="">
-                            </div>
-                            <div class="item-inner">
-                                <div class="item-title">Edwin Diaz</div>
-                                <div class="item-after">39</div>
-                            </div>
-                        </li>
-                    </ul>
+                    <a href="#" class="item-content item-link">
+                        <div class="item-media">
+                            <img src="http://gdx.mlb.com/images/gameday/mugshots/mlb/656186@2x.jpg" alt="">
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Dan Altavilla</div>
+                            <div class="item-after">53</div>
+                        </div>
+                    </a>
+                    <a href="#" class="item-content item-link">
+                        <div class="item-media">
+                            <img src="http://gdx.mlb.com/images/gameday/mugshots/mlb/491708@2x.jpg" alt="">
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Arquimedes Caminero</div>
+                            <div class="item-after">48</div>
+                        </div>
+                    </a>
+                    <a href="/mockups/player.html" class="item-content item-link">
+                        <div class="item-media">
+                            <img src="http://gdx.mlb.com/images/gameday/mugshots/mlb/518553@2x.jpg" alt="">
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Steve Cishek</div>
+                            <div class="item-after">31</div>
+                        </div>
+                    </a>
+                    <a href="#" class="item-content item-link">
+                        <div class="item-media">
+                            <img src="http://gdx.mlb.com/images/gameday/mugshots/mlb/621242@2x.jpg" alt="">
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Edwin Diaz</div>
+                            <div class="item-after">39</div>
+                        </div>
+                    </a>
                 </div>
             </div>
           </div>
@@ -96,7 +94,7 @@
     <!-- Path to your app js-->
     <script type="text/javascript" charset="utf-8">
         var app = new Framework7();
-        var playerSwiper = app.swiper(".swiper-container", {speed: 400, pagination: ".swiper-container .swiper-pagination"});
+        var mainView = app.addView('.view-main', {});
     </script>
   </body>
 </html> 
