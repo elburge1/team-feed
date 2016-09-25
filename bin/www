@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('express-middleware-practice:server');
+var debug = require('debug')('team-feed');
 var http = require('http');
 
 /**
