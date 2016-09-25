@@ -13,6 +13,7 @@
    app.use(bodyParser.urlencoded({extended: true}));
    app.use(expressSanitizer())
    app.set("view engine", "ejs");
+   app.set('views', path.join(__dirname, 'mockups'));
    app.use('/', routes);
 
    app.use(function(req, res, next){
