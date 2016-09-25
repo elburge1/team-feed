@@ -54,7 +54,7 @@ Dom7.get('../data/player1-4.json', '', function (data) {
     // init
     window.app = new Framework7({pushState: true});
     window.mainView = window.app.addView('.view-main', {domCache: true});
-    
+
 
     Dom7(".back-link").on("click", function(evt) {
         evt.preventDefault();
@@ -97,4 +97,3 @@ Dom7.get('../data/player1-4.json', '', function (data) {
         Dom7(targetId).show();
     });
 });
-
