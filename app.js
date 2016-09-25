@@ -4,6 +4,7 @@
        mongoose         = require("mongoose"),
        express          = require("express"),
        routes           = require('./routes/index'),
+       path             = require('path'),
        app              = express();
 
 
