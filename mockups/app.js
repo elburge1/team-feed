@@ -18,7 +18,7 @@ function renderPlayer(player_id) {
 }
 
 // load data
-Dom7.get('../data/player1-4.json', '', function (data) {
+Dom7.get('../data/players.json', '', function (data) {
     var data = JSON.parse(data);
     window.playerData = {players: _.values(data)};
 
